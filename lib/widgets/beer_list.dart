@@ -23,7 +23,8 @@ class BeerList extends StatelessWidget {
     } else if (snapshot.hasData) {
       var data = snapshot.data;
 
-      return ListView.builder(
+      return GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 4/4.5),
           itemCount: data!.length,
           itemBuilder: (context, index) {
             return BeerCard(beer: data[index]);

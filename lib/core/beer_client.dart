@@ -10,7 +10,7 @@ class BeerClient extends NetworkClient {
 
     // Get data from API
     // if per page = 100 you get error, pls write error handling for this errors
-    Response response = await dio.get('$baseUrl/beers?page=$page&per_page=10');
+    Response response = await dio.get('$baseUrl/beers?page=$page&per_page=16');
 
     // Data parse
     List parsedList = response.data;
