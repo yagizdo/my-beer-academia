@@ -5,14 +5,14 @@ class Beer {
   String? firstBrewed;
   String? description;
   String? imageUrl;
-  double? abv;
-  int? ibu;
-  int? targetFg;
-  int? targetOg;
-  int? ebc;
-  int? srm;
-  double? ph;
-  int? attenuationLevel;
+  dynamic abv;
+  dynamic ibu;
+  dynamic targetFg;
+  dynamic targetOg;
+  dynamic ebc;
+  dynamic srm;
+  dynamic ph;
+  dynamic attenuationLevel;
   Volume? volume;
   Volume? boilVolume;
   Method? method;
@@ -131,7 +131,7 @@ class Volume {
 class Method {
   List<MashTemp>? mashTemp;
   Fermentation? fermentation;
-  Null? twist;
+  String? twist;
 
   Method({this.mashTemp, this.fermentation, this.twist});
 
@@ -259,7 +259,7 @@ class Malt {
 }
 
 class Amount {
-  double? value;
+  dynamic value;
   String? unit;
 
   Amount({this.value, this.unit});
