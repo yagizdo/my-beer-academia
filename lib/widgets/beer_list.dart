@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_beer_academia/widgets/beer_card.dart';
 
 import '../constants/app_colors.dart';
 
@@ -25,12 +26,7 @@ class BeerList extends StatelessWidget {
       return ListView.builder(
           itemCount: data!.length,
           itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(
-                data[index].name!,
-                style: const TextStyle(color: white),
-              ),
-            );
+            return BeerCard(beer: data[index]);
           });
     } else {
       return Center(
