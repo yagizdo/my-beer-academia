@@ -3,7 +3,7 @@ import 'package:my_beer_academia/constants/app_colors.dart';
 import 'package:my_beer_academia/constants/app_strings.dart';
 
 import 'package:easy_localization/easy_localization.dart';
-import 'package:my_beer_academia/screens/home_view.dart';
+import 'package:my_beer_academia/screens/beers_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatelessWidget {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         locale: context.locale,
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
-        home: HomeView(),
+        home: BeersView(),
       ),
     );
   }
