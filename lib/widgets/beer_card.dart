@@ -11,7 +11,7 @@ class BeerCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(5.w),
       child: Card(
-        color: white,
+        color: yellow.withOpacity(0.5),
         elevation: 0,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -46,14 +46,14 @@ class BeerCard extends StatelessWidget {
                 left: 125.w,
                 child: Container(
               decoration: const BoxDecoration(
-                color: Colors.black,
+                color: white,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(150),bottomLeft: Radius.circular(50))
               ),
               height: 70.h,
               width: 0.2.sw,
                   child: Padding(
                     padding: EdgeInsets.only(right: 15.w),
-                    child: Icon(Icons.arrow_forward_rounded,color: white,size: 25.sp,),
+                    child: Icon(Icons.arrow_forward_rounded,color: black,size: 25.sp,),
                   ),
             ))
           ],

@@ -16,7 +16,7 @@ class BeersView extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text('Beers'),
+          title: Text('Beers',style: TextStyle(color: black),),
         ),
         body: Column(
           children: [
